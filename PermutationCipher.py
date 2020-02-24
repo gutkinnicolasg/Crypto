@@ -118,4 +118,3 @@ if __name__=="__main__":
         message = input("What message would you like decrypted?: ")
         # calls the decrypt function defined above
         decrypt(message, key)
-
