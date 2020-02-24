@@ -65,4 +65,3 @@ if __name__=="__main__":
         shift = int(input("Number of shifts? "))
         # calls the encrypt function defined above
         decrypt(phrase.upper(), shift)
-
