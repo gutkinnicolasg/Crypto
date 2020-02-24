@@ -89,4 +89,3 @@ if __name__=="__main__":
     print("Total: " + str((len(text))))
     # closes file we opened
     filename.close()
-
