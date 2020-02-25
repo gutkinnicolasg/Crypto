@@ -80,7 +80,8 @@ def check(text):
 # Main function
 if __name__=="__main__":
     # filename opens up a file that stores the text to analyze
-    filename = open("./sample.txt", "r")
+    # for this code to work <FILEPATH> must be changed to an actual filepath
+    filename = open("<FILEPATH>", "r")
     # stores the whole file in the variable text
     text = filename.read()
     # calls the check function
