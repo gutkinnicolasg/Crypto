@@ -3,13 +3,6 @@
 # Password Validator
 # by Guillaume Gutkin-Nicolas
 
-# Rule 1: Minimum length of 8
-# Rule 2: Includes Uppercase
-# Rule 3: Includes Lowercase
-# Rule 4: Includes Number
-# Rule 5: Includes Special Character [!@#$%^&*-_+=?><.,]
-# Rule 6: Doesn't include these words [password, secureset]
-   
 # Global variable list that contains all the allowed special characters
 whitelist = ['!','@','#','$','%','^','&','*','-','_','+','=','?','>','<','.',',']
 # Global variable list that contains all the words that aren't allowed
@@ -102,10 +95,9 @@ if __name__=="__main__":
     print("Rule 4: Includes Number")
     print("Rule 5: Includes Special Character: !@#$%^&*-_+=?><.,")
     print("Rule 6: Doesn't include these words: password, secureset\n")
-    flag = True 
-    while flag == True:
+    while True:
         password = input("Please enter a password: ")
         if checkRules(password) == True:
             print("Password Accepted...")
-            flag = False 
-
+            break 
+            
